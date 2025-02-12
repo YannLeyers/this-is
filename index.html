@@ -50,20 +50,17 @@
   </div>
   <div class="title-underline"></div>
 
-  <div class="voting-container">
-    <img src="./assets/images/traffic.png" class="voting-image" alt="Header Image">
-    <div class="voting-text">Traffic</div>
-    <div class="voting-text-two">Belgium / Brussels</div>
-    <div class="voting-buttons">
-      <button id="art-btn" class="vote-button" onclick="vote('art')">Art</button>
-      <button id="vandalism-btn" class="vote-button" onclick="vote('vandalism')">Vandalism</button>
-    </div>
+  <div class="dropdown">
+    <img src="./assets/images/traffic.png" class="dropdown-image" alt="Header Image">
+    <div class="dropdown-text">Traffic</div>
+    <div class="dropdown-text-two">Belgium / Brussels</div>
+    <button class="vote-button" onclick="vote('art')">Art</button>
+    <button class="vote-button" onclick="vote('vandalism')">Vandalism</button>
   </div>
 
   <div class="results">
     Art: <span id="art-count">0</span>% | Vandalism: <span id="vandalism-count">0</span>%
   </div>
-
 
 </body>
 

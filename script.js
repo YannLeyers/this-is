@@ -7,27 +7,23 @@ document.querySelector('.dropdown').addEventListener('click', function () {
   content.style.display = content.style.display === 'flex' ? 'none' : 'flex';
 });
 
-let artVotes = 0;
-let vandalismVotes = 0;
-let totalVotes = 0;
+// Load votes from local storage
+let votes = JSON.parse(localStorage.getItem('votes')) || { art: 0, vandalism: 0 };
 
-function vote(choice) {
-  if (choice === 'art') {
-    artVotes++;
-  } else if (choice === 'vandalism') {
-    vandalismVotes++;
-  }
-
-  totalVotes++;
-
+function vote(option) {
+  votes[option]++;
+  localStorage.setItem('votes', JSON.stringify(votes));
   updateResults();
 }
 
 function updateResults() {
-  const artPercentage = Math.round((artVotes / totalVotes) * 100);
-  const vandalismPercentage = Math.round((vandalismVotes / totalVotes) * 100);
+  let totalVotes = votes.art + votes.vandalism;
+  let artPercentage = totalVotes === 0 ? 0 : ((votes.art / totalVotes) * 100).toFixed(1);
+  let vandalismPercentage = totalVotes === 0 ? 0 : ((votes.vandalism / totalVotes) * 100).toFixed(1);
 
-  // Display percentages
   document.getElementById('art-count').textContent = artPercentage;
   document.getElementById('vandalism-count').textContent = vandalismPercentage;
 }
+
+// Update on load
+updateResults();
