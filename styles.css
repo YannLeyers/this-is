@@ -38,9 +38,10 @@ body {
     .hamburger .line {
         width: 37px;
         height: 4px;
-        background-color: #fff; /* Adjust the color as needed */
+        background-color: #fff;
+        /* Adjust the color as needed */
         margin: 2px 0;
-      }
+    }
 
     /* Navigation menu (hidden by default) */
     .nav-menu {
@@ -179,6 +180,7 @@ body {
         height: 1px;
         background-color: #aaa;
         margin: 1px auto;
+        margin-bottom: 20px;
     }
 
     .dropdown {
@@ -186,29 +188,33 @@ body {
         margin: 20px auto;
     }
 
-    .dropdown-image {
+    .voting-image {
         width: 335px;
         height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .dropdown-text {
+    .voting-text {
         font-family: 'Varta', sans-serif;
         font-size: 16px;
         margin-top: 10px;
         color: #fff;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .dropdown-text-two {
+    .voting-text-two {
         font-family: 'Varta', sans-serif;
         font-size: 16px;
         color: #aaa;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
     }
 
-    .dropdown-content {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+    .voting-buttons{
+        margin-bottom: 5px;
     }
 
     .vote-button {
@@ -222,9 +228,20 @@ body {
         background-color: #131313;
         color: #EBEBEB;
         line-height: 1;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .dropdown:hover .dropdown-content {
-        display: flex;
+    .results{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varta', sans-serif;
+        color: #EBEBEB;
+        font-size: 16px;
+    }
+
+    .vote-button:disabled {
+        background-color: grey;
+        cursor: not-allowed;
     }
 }

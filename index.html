@@ -22,8 +22,8 @@
     </div>
     <nav class="nav-menu" id="nav-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
     <div class="headerLine"></div>
@@ -40,7 +40,7 @@
     <div class="description">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis libero hendrerit lectus eleifend.
       </p>
-      <a href="#" class="learn-more">Learn more.</a>
+      <a href="about.html" class="learn-more">Learn more.</a>
     </div>
   </div>
 
@@ -50,15 +50,20 @@
   </div>
   <div class="title-underline"></div>
 
-  <div class="dropdown">
-    <img src="./assets/images/traffic.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Traffic</div>
-    <div class="dropdown-text-two">Belgium / Brussels</div>
-    <div class="dropdown-content">
-      <button class="vote-button">Art</button>
-      <button class="vote-button">Vandalism</button>
+  <div class="voting-container">
+    <img src="./assets/images/traffic.png" class="voting-image" alt="Header Image">
+    <div class="voting-text">Traffic</div>
+    <div class="voting-text-two">Belgium / Brussels</div>
+    <div class="voting-buttons">
+      <button id="art-btn" class="vote-button" onclick="vote('art')">Art</button>
+      <button id="vandalism-btn" class="vote-button" onclick="vote('vandalism')">Vandalism</button>
     </div>
   </div>
+
+  <div class="results">
+    Art: <span id="art-count">0</span>% | Vandalism: <span id="vandalism-count">0</span>%
+  </div>
+
 
 </body>
 
