@@ -11,7 +11,7 @@ document.querySelector('.dropdown').addEventListener('click', function () {
 let votes = JSON.parse(localStorage.getItem('votes')) || {};
 
 // Ensure each category has its own object in votes
-const categories = ['graffitiOne', 'graffitiTwo', 'graffitiThree', 'graffitiFour', 'graffitiFive','graffitiSix', 'graffitiSeven', 'graffitiEight', 'graffitiNine', 'graffitiTen']; // Add more categories as needed
+const categories = ['graffitiOne', 'graffitiTwo', 'graffitiThree', 'graffitiFour', 'graffitiFive', 'graffitiSix', 'graffitiSeven', 'graffitiEight', 'graffitiNine', 'graffitiTen']; // Add more categories as needed
 categories.forEach(category => {
   if (!votes[category]) {
     votes[category] = { art: 0, vandalism: 0 };
