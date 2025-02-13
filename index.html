@@ -18,7 +18,9 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <img src="./assets/images/logo.png" alt="Logo" class="logo">
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="Logo" class="logo">
+      </a>
     </div>
     <nav class="nav-menu" id="nav-menu">
       <ul>
@@ -31,136 +33,138 @@
     <div class="headerLine"></div>
   </header>
 
-  <img src="./assets/images/header.png" class="header-image" alt="Header Image">
-  <div class="header-text">Graffiti in Antwerp: Is it art or vandalism?</div>
+  <div class="voting-system">
+    <img src="./assets/images/header.png" class="header-image" alt="Header Image">
+    <div class="header-text">Graffiti in Antwerp: Is it art or vandalism?</div>
 
-  <div class="content">
-    <div class="group-info">
-      <p class="group-title">Group</p>
-      <p class="group-name">Enschede <strong>3</strong></p>
+    <div class="content">
+      <div class="group-info">
+        <p class="group-title">Group</p>
+        <p class="group-name">Enschede <strong>3</strong></p>
+      </div>
+      <div class="description">
+        <p>Graffiti is a type of artwork, although it is not always positively received or perceived as art. In the eyes
+          of
+          the law, graffiti is seen as vandalism in most places.
+        </p>
+        <a href="about.html" class="learn-more">Learn more.</a>
+      </div>
     </div>
-    <div class="description">
-      <p>Graffiti is a type of artwork, although it is not always positively received or perceived as art. In the eyes
-        of
-        the law, graffiti is seen as vandalism in most places.
-      </p>
-      <a href="about.html" class="learn-more">Learn more.</a>
+
+    <div class="title-bar">
+      <div class="section-title">Art or Vandalism?</div>
+      <div class="photo-count">10 Photo’s</div>
     </div>
-  </div>
+    <div class="title-underline"></div>
 
-  <div class="title-bar">
-    <div class="section-title">Art or Vandalism?</div>
-    <div class="photo-count">10 Photo’s</div>
-  </div>
-  <div class="title-underline"></div>
-
-  <div class="dropdown" id="traffic-voting">
-    <img src="./assets/images/graffitiOne.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Traffic</div>
-    <div class="dropdown-text-two">Belgium / Brussels</div>
-    <button class="vote-button" onclick="vote('graffitiOne, 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiOne', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="traffic-art-count">0</span>% | Vandalism: <span id="traffic-vandalism-count">0</span>%
+    <div class="dropdown" id="traffic-voting">
+      <img src="./assets/images/graffitiOne.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Traffic</div>
+      <div class="dropdown-text-two">Belgium / Brussels</div>
+      <button class="vote-button" onclick="vote('graffitiOne, 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiOne', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="traffic-art-count">0</span>% | Vandalism: <span id="traffic-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiTwo.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiTwo', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiTwo', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiTwo.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiTwo', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiTwo', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiThree.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiThree', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiThree', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiThree.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiThree', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiThree', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiFour.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiFour', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiFour', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiFour.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiFour', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiFour', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiFive.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiFive', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiFive', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiFive.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiFive', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiFive', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiSix.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiSix', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiSix', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiSix.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiSix', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiSix', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiSeven.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiSeven', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiSeven', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiSeven.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiSeven', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiSeven', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiEight.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiEight', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiEight', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiEight.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiEight', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiEight', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiNine.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiNine', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiNine', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiNine.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiNine', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiNine', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="graffiti-voting">
-    <img src="./assets/images/graffitiTen.png" class="dropdown-image" alt="Header Image">
-    <div class="dropdown-text">Graffiti</div>
-    <div class="dropdown-text-two">Belgium / Antwerp</div>
-    <button class="vote-button" onclick="vote('graffitiTen', 'art')">Art</button>
-    <button class="vote-button" onclick="vote('graffitiTen', 'vandalism')">Vandalism</button>
-    <div class="results">
-      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    <div class="dropdown" id="graffiti-voting">
+      <img src="./assets/images/graffitiTen.png" class="dropdown-image" alt="Header Image">
+      <div class="dropdown-text">Graffiti</div>
+      <div class="dropdown-text-two">Belgium / Antwerp</div>
+      <button class="vote-button" onclick="vote('graffitiTen', 'art')">Art</button>
+      <button class="vote-button" onclick="vote('graffitiTen', 'vandalism')">Vandalism</button>
+      <div class="results">
+        Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+      </div>
     </div>
   </div>
 

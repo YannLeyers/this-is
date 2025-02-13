@@ -72,11 +72,15 @@ body {
     }
 
     .headerLine {
+        width: 100%;
+        max-width: 335px;
         height: 1px;
-        background-color: #AAAAAA;
-        width: 335px;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        background-color: #aaa;
+        margin: 1px auto;
+        margin-bottom: 20px;
+        max-width: calc(100% - 40px); /* Adjust width to maintain 20px margin on both sides */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .header-image {
@@ -84,6 +88,8 @@ body {
         height: 150px;
         margin-left: 20px;
         margin-right: 20px;
+        width: calc(100% - 40px); /* Adjust width to maintain 20px margin on both sides */
+        height: auto;
     }
 
     .header-text {
@@ -101,7 +107,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 335px;
+        max-width: auto;
         margin: 20px;
         color: white;
         margin-bottom: 80px;
@@ -149,6 +155,7 @@ body {
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 5px;
+        max-width: calc(100% - 40px); /* Adjust width to maintain 20px margin on both sides */
     }
 
     .section-title {
@@ -170,6 +177,9 @@ body {
         background-color: #aaa;
         margin: 1px auto;
         margin-bottom: 20px;
+        max-width: calc(100% - 40px); /* Adjust width to maintain 20px margin on both sides */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .dropdown {
@@ -238,6 +248,7 @@ body {
     .dropdown-image {
         width: 335px;
         height: 200px;
+
     }
 
     .dropdown-text {
@@ -287,5 +298,9 @@ body {
         font-weight: bold;
         font-family: 'Varta', sans-serif;
         color: #EBEBEB;
+    }
+
+    .voting-system{
+        margin-bottom: 80px;
     }
 }
