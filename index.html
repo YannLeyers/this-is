@@ -18,12 +18,14 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <img src="logo.png" alt="Logo" class="logo">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo">
     </div>
     <nav class="nav-menu" id="nav-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About Graffiti</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="styles.html">Different Styles</a></li>
       </ul>
     </nav>
     <div class="headerLine"></div>
@@ -38,7 +40,9 @@
       <p class="group-name">Enschede <strong>3</strong></p>
     </div>
     <div class="description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis libero hendrerit lectus eleifend.
+      <p>Graffiti is a type of artwork, although it is not always positively received or perceived as art. In the eyes
+        of
+        the law, graffiti is seen as vandalism in most places.
       </p>
       <a href="about.html" class="learn-more">Learn more.</a>
     </div>
@@ -50,16 +54,26 @@
   </div>
   <div class="title-underline"></div>
 
-  <div class="dropdown">
+  <div class="dropdown" id="traffic-voting">
     <img src="./assets/images/traffic.png" class="dropdown-image" alt="Header Image">
     <div class="dropdown-text">Traffic</div>
     <div class="dropdown-text-two">Belgium / Brussels</div>
-    <button class="vote-button" onclick="vote('art')">Art</button>
-    <button class="vote-button" onclick="vote('vandalism')">Vandalism</button>
+    <button class="vote-button" onclick="vote('traffic', 'art')">Art</button>
+    <button class="vote-button" onclick="vote('traffic', 'vandalism')">Vandalism</button>
+    <div class="results">
+      Art: <span id="traffic-art-count">0</span>% | Vandalism: <span id="traffic-vandalism-count">0</span>%
+    </div>
   </div>
 
-  <div class="results">
-    Art: <span id="art-count">0</span>% | Vandalism: <span id="vandalism-count">0</span>%
+  <div class="dropdown" id="graffiti-voting">
+    <img src="./assets/images/traffic.png" class="dropdown-image" alt="Header Image">
+    <div class="dropdown-text">Graffiti</div>
+    <div class="dropdown-text-two">Belgium / Antwerp</div>
+    <button class="vote-button" onclick="vote('graffiti', 'art')">Art</button>
+    <button class="vote-button" onclick="vote('graffiti', 'vandalism')">Vandalism</button>
+    <div class="results">
+      Art: <span id="graffiti-art-count">0</span>% | Vandalism: <span id="graffiti-vandalism-count">0</span>%
+    </div>
   </div>
 
 </body>
